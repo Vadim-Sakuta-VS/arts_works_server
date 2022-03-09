@@ -1,0 +1,24 @@
+{
+  "name": "arts_works_server",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Server part of project about painters and their art works",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "JS",
+    "NodeJS",
+    "painter",
+    "draw",
+    "picture",
+    "art",
+    "work"
+  ],
+  "author": "Vadim",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vadim-Sakuta-VS/arts_works_server"
+  },
+  "license": "ISC"
+}
