@@ -5,7 +5,12 @@
   "private": true,
   "description": "Server part of project about painters and their art works",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
   "keywords": [
     "JS",
     "NodeJS",
@@ -20,5 +25,11 @@
     "type": "git",
     "url": "https://github.com/Vadim-Sakuta-VS/arts_works_server"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "prettier": "^2.5.1"
+  }
 }

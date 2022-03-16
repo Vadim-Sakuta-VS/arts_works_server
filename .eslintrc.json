@@ -1,0 +1,58 @@
+{
+  "root": true,
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "plugin:import/recommended", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-var": "error",
+    "no-unused-vars": "warn",
+    "no-param-reassign": "error",
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": [
+          "return",
+          "export",
+          "block-like",
+          "for",
+          "switch",
+          "function",
+          "do",
+          "class"
+        ]
+      },
+      {
+        "blankLine": "always",
+        "prev": ["block-like", "for", "switch", "function", "do", "class"],
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": "export",
+        "next": "export"
+      }
+    ],
+    "import/first": "error",
+    "import/exports-last": "error",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "import/newline-after-import": "error",
+    "import/group-exports": "warn"
+  }
+}
